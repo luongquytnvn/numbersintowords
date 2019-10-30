@@ -5,7 +5,7 @@ public class numbersIntoWords {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap vao so ban muon chuyen sang dang chu: ");
         int number = scanner.nextInt();
-        if (number > 0 && number < 10) {
+        if (number >= 0 && number < 10) {
             switch (number) {
                 case 0:
                     System.out.print("zero ");
