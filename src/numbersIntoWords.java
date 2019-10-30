@@ -76,6 +76,9 @@ public class numbersIntoWords {
             donvi(number-Math.round(number/10)*10);
         } else if (number >= 100 && number < 1000) {
             hangtram(Math.round(number/100));
+            if (number%100!=0) {
+                System.out.print("and ");
+            }
             hangchuc(Math.round((number-Math.round(number/100)*100)/10));
             donvi(number-Math.round(number/100)*100-Math.round((number-Math.round(number/100)*100)/10)*10);
         } else {
